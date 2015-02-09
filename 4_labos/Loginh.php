@@ -1,0 +1,33 @@
+﻿<?php
+	session_start();
+	if(isset($_SESSION['prijavljen']))
+	{
+		header("Location:Naslovna.php");
+	}
+?>
+
+<!DOCTYPE>
+<html>
+	<head>
+		<title> Prijava ZDK </title>
+		<link rel="stylesheet" type="text/css" href="Stil.css">
+	</head>
+	<body>
+		<div class="stranica_prijava">
+			<div class="lijevo">
+				<div class="logo">
+					<img src="logo.png" alt="Logo ZDK" width="30%" height="30%">
+					<p class="moto">
+						Dominica sancta, quid remediis sunt
+					</p>
+				</div>
+			<div class="desno">
+				<form class="forma_za_prijavu" action="Login.php" method="POST">
+				Korisničko ime: <input type="text" name="username" /> <br /> <br />
+				Lozinka: <input type="password" name="password" /> <br /> <br />
+				<input type="submit" value="Prijava" name="prijava"/>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

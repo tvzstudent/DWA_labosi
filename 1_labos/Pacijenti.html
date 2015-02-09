@@ -1,0 +1,90 @@
+﻿<!DOCTYPE>
+<html>
+	<head>
+		<title> Pacijenti ZDK </title>
+		<link rel="stylesheet" type="text/css" href="Stil.css">	 
+	</head>
+	<body>
+		<div class="stranica_sadrzaj">
+			<header class="header">
+				<img class="logo" src="logo.png" alt="Logo ZDK" width="15%" height="15%">
+			<div class="korisnicki_podatci">
+					<a href="Login.html"> <input type="submit" value="Odjava"> </a>
+			</div>
+			</header>
+			<aside class="izbornik">
+				<!--<ul>
+					<li> <a href="#osobni_podatci"> Osobni podatci </a> </li>
+					<li> <a href="#skolovanje"> Školovanje </a> </li>
+					<li> <a href="#radno_iskustvo"> Radno iskustvo </a> </li>
+					<li> <a href="#znanje_i_vjestine"> Znanje i vještine </a> </li>
+				</ul>-->
+			</aside>
+			<div class="sadrzaj">
+			<input type="text" name="search" /> <input onclick="pretrazi(document.getElementByName('search').value)" type="submit" value="Pretraži" />
+				<table class="tablica">
+					<th> Ime </th>
+					<th> Prezime </th>
+					<th> Spol </th>
+					<th> Datum rođenja </th>
+					<th> Mobitel </th>
+					<th> Adresa </th>
+					<th> Mjesto </th>
+					<tr>
+						<td> Štefica </td>
+						<td> Ostojić </td>
+						<td> Ž </td>
+						<td> 17.3.1937 </td>
+						<td> 091/7121688 </td>
+						<td> Redovka 9 </td>
+						<td> Zagreb </td>
+					</tr>
+					<tr>
+						<td> Ivan </td>
+						<td> Kušan </td>
+						<td> M </td>
+						<td> 19.7.1979 </td>
+						<td> 098/1667148 </td>
+						<td> Marinovečka 12 </td>
+						<td> Zagreb </td>
+					</tr>
+					<tr>
+						<td> Hrvoje </td>
+						<td> Radić </td>
+						<td> M </td>
+						<td> 6.6.1944 </td>
+						<td> 098/7317883 </td>
+						<td> Dore Pejačević 28 </td>
+						<td> Zagreb </td>
+					</tr>
+					<tr>
+						<td> Vjeran </td>
+						<td> Delić </td>
+						<td> M </td>
+						<td> 2.3.1978 </td>
+						<td> 022/4672651 </td>
+						<td> Banovski Put 11 </td>
+						<td> Zagreb </td>
+					</tr>
+					<tr>
+						<td> Filip </td>
+						<td> Pavlović </td>
+						<td> M </td>
+						<td> 28.3.1939 </td>
+						<td> 092/6058667 </td>
+						<td> Sitnice 24 </td>
+						<td> Zagreb </td>
+					</tr>
+				</table>
+			</div>
+			<footer class="footer">
+				&copy; ZDK <?PHP echo date("Y"); ?>
+			</footer>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function pretrazi(tekst) {
+			
+		}
+	</script>
+</html>

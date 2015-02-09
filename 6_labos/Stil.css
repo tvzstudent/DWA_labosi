@@ -1,0 +1,116 @@
+﻿/* Boje
+#BC1F2A -> crvena
+#7A0A12 -> trula višnja
+#DE535D -> roza
+#14786D -> plavo zelena
+#88B51E -> zelena
+*/
+
+/*---------- Prijava.html ----------*/
+
+body{
+	background: #E8E7E8;
+}
+
+.stranica_prijava{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: black;
+}
+
+.lijevo{
+	width: 50%;
+	height: 100%;
+	background: #FFFFFF;
+}
+
+.logo{
+	position: absolute;
+	left: 27%;
+	top: 40%;
+}
+
+.moto{
+	position: absolute;
+	left: 6%;
+}
+
+.desno{
+	width: 50%;
+	height: 100%;
+	background: #7A0A12;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+}
+
+.forma_za_prijavu{
+	color: #FFFFFF;
+	position: absolute;
+	left: 5%;
+	top: 45%;
+}
+
+/*---------- Prijava.php ----------*/
+
+.stranica_sadrzaj{
+	width: 100%;
+	height: 1000px;
+	position: relative;
+	background: #E8E7E8;
+}
+
+.header{
+	width: 100%;
+	height: 20%;
+	background: #7A0A12;
+}
+
+.logo{
+	position: absolute;
+	top: 2.5%;
+	left: 3%;
+}
+
+.korisnicki_podatci{
+	position: absolute;
+	top: 15%;
+	left: 93%;
+}
+
+.izbornik{
+	width: 20%;
+	height: 60%;
+	position: absolute;
+	left: 1%;
+	top: 21%;
+	background: #BC1F2A;
+	text-align: center;
+}
+
+.sadrzaj{
+	background: #FFFFFF;
+	width: 77%;
+	height: 58.5%;
+	position: absolute;
+	top: 21%;
+	left: 22%;
+	padding: 5px;
+}
+
+.footer{
+	width: 100%;
+	height: 20%;
+	background: #7A0A12;
+	position: absolute;
+	top: 82%;
+	font-size: 2em;
+	text-align: center;
+}
+
+/*---------- Pacijenti.html ----------*/
+
+.tablica tr:hover{
+	background: #88B51E;
+}

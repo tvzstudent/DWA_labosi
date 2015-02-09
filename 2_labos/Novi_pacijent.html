@@ -1,0 +1,73 @@
+﻿<!DOCTYPE>
+<html>
+	<head>
+		<title> Sadrzaj ZDK </title>
+		<link rel="stylesheet" type="text/css" href="Stil.css">	 
+	</head>
+	<body>
+		<div class="stranica_sadrzaj">
+			<header class="header">
+				<img class="logo" src="logo.png" alt="Logo ZDK" width="15%" height="15%">
+			<div class="korisnicki_podatci">
+					<a href="Login.html"> <input type="submit" value="Odjava"> </a>
+			</div>
+			</header>
+			<aside class="izbornik">
+				<ul>
+					<li> <a href="Login.php"> Naslovna </a> </li>
+					<li> <a href="Pacijenti.php"> Popis pacijenata </a> </li>
+				</ul>
+			</aside>
+			<div class="sadrzaj">
+				Upis novih pacijenata: <br />
+				Ime: <input type="text" name="ime" /> <br />
+				Prezime: <input type="text" name="prezime" /> <br />
+				Spol:
+				<input type="radio" value="spol"> M
+				<input type="radio" value="spol"> Ž <br />
+				Datum rođenja:
+				<input type="text" name="godina_rodjenja" placeholder="dd.mm.gggg" /> <br />
+				Mjesto rođenja: <input type="text" name="mjesto_rodjenja" /> <br />
+				Adresa i mjesto stanovanja: <input type="text" name="adr_i_mj_stanovanja" /> <br />
+				Krvna grupa:
+				<select >
+					<option> A </option>
+					<option> B </option>
+					<option> AB </option>
+					<option> 0 </option>
+					<option selected> Ne znam </option>
+				</select>
+				<select>
+					<option> + Pozitivna </option>
+					<option> - Negativna </option>
+					<option selected> Ne znam </option>
+				</select> <br />
+				Ima li prijašnjih medicinskih tegoba:
+				<select onChange="odobri('medicinske_tegobe')" >
+					<option id="tegobe"> Da </option>
+					<option selected> Ne </option>
+				</select> <br />
+				Koje tegobe: <input type="text" name="medicinske_tegobe"/> <br />
+				Je li osoba alergična na lijekove:
+				<select onChange="odobri('lijekovi')" >
+					<option id="alergija"> Da </option>
+					<option> Ne </option>
+					<option selected> Ne zna </option>
+				</select> <br />
+				Na koje lijekove:
+				<input type="text" name="lijekovi"/>
+			</div>
+			<footer class="footer">
+				&copy; ZDK <?PHP echo date("Y"); ?>
+			</footer>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function odobri(name) {
+			if(document.getElementById('tegobe').selected)
+				document.getElementByName(name).enabled='true';
+			else
+				document.getElementByName(name).enabled='false';
+		}
+	</script>
+</html>
