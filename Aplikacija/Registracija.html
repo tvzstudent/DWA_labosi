@@ -1,0 +1,37 @@
+﻿<!DOCTYPE>
+<html>
+	<head>
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="grid.css" />
+		<link rel="stylesheet" href="stil.css" />
+	</head>
+	<body>
+		<header class="row">
+			<title> Registracija </title>
+			<img src="slike/logo.jpeg" alt="" width="110" height="110">
+		</header>
+		<div class="forma row">
+		<form class="column column-3 registracija" action="Registracija.php" method="post">
+			Korisničko ime: <input type="text" name="korisnicko_ime" autocomplete="off" />
+			Lozinka: <input type="password" name="lozinka" />
+			Ponovljena lozinka: <input type="password" name="ponovljena_lozinka" /> <br />
+			E-mail: <br /> <input type="email" name="e_mail" autocomplete="off" /> 
+			Odaberite pitanje, ako zaboravite lozinku:
+			<select name="pitanje">
+				<option value="0" selected="true" > Moj prvi auto </option>
+				<option value="1"> Djevojačko prezime majke </option>
+				<option value="2"> Ime kućnog ljubimca </option>
+				<option value="3"> Mjesto rođenja </option>
+				<option value="4"> Ime učiteljice </option>
+			</select>
+			Odgovor na pitanje: <input type="text" name="odgovor" autocomplete="off" />
+			<input type="submit" value="Registriraj se" name="registracija"/>
+		</form>
+		</div>
+		<div class="column column-12 lala">
+		<a href="Prijava.html"> Prijavite se <a />
+		</div>
+		<footer>
+		</footer>
+	</body>	
+</html>
